@@ -15,3 +15,7 @@
 .about_me {
     text-align: left;
 }
+
+.image {
+    float: right;
+}
