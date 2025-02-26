@@ -1,23 +1,50 @@
-.tittle {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.inline {
-    align: center;
+.inline{
     display: flex;
-    gap: 10px; /* Space between items */
-    
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    gap: 20px;
 }
 
-.who_am_i {
-    font-family: cursive;
+body {
+    background-color: black;
+    color: white;
 }
 
-.about_me {
+.center_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.about_me, .my_hobbies, .social_media {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.about_me::after, .my_hobbies::after, .social_media::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(to right, red, white);
+    transition: width 0.3s ease-in-out;
+}
+
+.about_me:hover::after, .my_hobbies:hover::after, .social_media:hover::after {
+    width: 100%;
+}
+
+.who_am_i{
+    color: black;
+}
+
+.about_me_dis{
     text-align: left;
-}
-
-.image {
-    float: right;
+    margin-left: 20px;
 }
