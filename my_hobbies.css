@@ -1,0 +1,54 @@
+.inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Ensures vertical centering */
+    text-align: center;
+    gap: 20px;
+}
+
+.about_me_2{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.my_hobbies_2{
+    color: white;
+    text-decoration: none;
+    position: relative; /* Add position relative for the animation */
+}
+
+.social_media_2{
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.hobby_tittle{
+    justify-items: center;
+    text-align: center;
+}
+
+/* Add underline animation */
+.about_me_2::after, .my_hobbies_2::after, .social_media_2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(to right, red, white);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.about_me_2:hover::after, .my_hobbies_2:hover::after, .social_media_2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
