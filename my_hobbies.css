@@ -38,17 +38,14 @@ body{
 .about_me_2::after, .my_hobbies_2::after, .social_media_2::after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 0;
     height: 2px;
     bottom: -2px;
     left: 0;
     background: linear-gradient(to right, red, white);
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.5s ease-out;
+    transition: width 0.3s ease-in-out;
 }
 
 .about_me_2:hover::after, .my_hobbies_2:hover::after, .social_media_2:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    width: 100%;
 }
