@@ -19,24 +19,25 @@ body {
     color: white;
 }
 
-.about_me, .my_hobbies, .social_media {
+.about_me, .my_hobbies, .social_media, .achievements {
     color: white;
     text-decoration: none;
     position: relative;
 }
 
-.about_me::after, .my_hobbies::after, .social_media::after {
+
+.about_me::after, .my_hobbies::after, .social_media::after, .achievements::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
     bottom: -2px;
     left: 0;
-    background: linear-gradient(to right, red, white);
+    background: linear-gradient(to right, red, red);
     transition: width 0.3s ease-in-out;
 }
 
-.about_me:hover::after, .my_hobbies:hover::after, .social_media:hover::after {
+.about_me:hover::after, .my_hobbies:hover::after, .social_media:hover::after, .achievements:hover::after {
     width: 100%;
 }
 
@@ -48,6 +49,7 @@ body {
     text-align: left;
     margin-left: 20px;
 }
+
 
 .one {
     text-align: left;

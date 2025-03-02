@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Ensures vertical centering */
+    text-align: center;
+    gap: 20px;
+}
+
+.intro{
+    position: absolute; /* Use absolute positioning */
+    top: 100px; /* Adjust the top position (y-axis) */
+    left: 50px; /* Adjust the left position (x-axis) */
+    width: 35%; /* Adjust the width as needed */
+    text-align: center; /* Center the text */
+}
+
+.about_me::after, .my_hobbies::after, .social_media::after, .achievements::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(to right, red, red);
+    transition: width 0.3s ease-in-out;
+}
+
+.about_me:hover::after, .my_hobbies:hover::after, .social_media:hover::after, .achievements:hover::after {
+    width: 100%;
+}
+
+.about_me, .my_hobbies, .social_media, .social_media, .achievements{
+    text-decoration: none;
+}

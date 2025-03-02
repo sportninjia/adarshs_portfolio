@@ -35,7 +35,7 @@ body{
 }
 
 /* Add underline animation */
-.about_me_2::after, .my_hobbies_2::after, .social_media_2::after {
+.about_me_2::after, .my_hobbies_2::after, .social_media_2::after, .achievements {
     content: '';
     position: absolute;
     width: 0;
@@ -48,4 +48,8 @@ body{
 
 .about_me_2:hover::after, .my_hobbies_2:hover::after, .social_media_2:hover::after {
     width: 100%;
+}
+
+.tittle{
+    text-align: center;
 }
