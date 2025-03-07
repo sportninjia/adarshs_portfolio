@@ -1,25 +1,35 @@
+/* General Body Styling */
 body {
     background-color: black;
     color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.inline {
+
+/* Navigation Links */
+.center_text {
     display: flex;
     justify-content: center;
-    align-items: center;  /* Ensures vertical centering */
-    text-align: center;
+    align-items: center;
     gap: 20px;
+    color: white;
+    margin-top: 20px; /* Adjust spacing from title */
 }
 
-.intro{
-    position: absolute; /* Use absolute positioning */
-    top: 100px; /* Adjust the top position (y-axis) */
-    left: 50px; /* Adjust the left position (x-axis) */
-    width: 35%; /* Adjust the width as needed */
-    text-align: center; /* Center the text */
+/* Common Styles for Navigation Links */
+.about_me, .my_hobbies, .social_media, .achievements, .home {
+    color: white;
+    text-decoration: none;
+    position: relative;
 }
 
-.about_me::after, .my_hobbies::after, .social_media::after, .achievements::after {
+/* Hover Effect for Links */
+.about_me::after, 
+.my_hobbies::after, 
+.social_media::after, 
+.achievements::after, 
+.home::after {
     content: '';
     position: absolute;
     width: 0;
@@ -30,10 +40,49 @@ body {
     transition: width 0.3s ease-in-out;
 }
 
-.about_me:hover::after, .my_hobbies:hover::after, .social_media:hover::after, .achievements:hover::after {
+.about_me:hover::after, 
+.my_hobbies:hover::after, 
+.social_media:hover::after, 
+.achievements:hover::after,
+.home:hover::after {
     width: 100%;
 }
 
-.about_me, .my_hobbies, .social_media, .social_media, .achievements{
-    text-decoration: none;
+/* Title Styling */
+.title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Welcome Section */
+/* Welcome Section */
+.welcome {
+    position: absolute;
+    top: 40%;        /* Centers vertically */
+    left: 20%;       /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts by 50% of the element's size */
+    margin-left: 20px; /* Offsets slightly to the right on the x-axis */
+    text-align: center;
+    font-size: 30px;   /* Optional: adjust the font size if needed */
+}
+
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+/* Align Inline Text with Home */
+.inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px; /* Ensures alignment with Home */
 }

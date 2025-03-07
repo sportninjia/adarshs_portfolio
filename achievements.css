@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: black;
+}
+
+.achievements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    position: relative;
+    padding: 10px 20px;
+    z-index: 1;
+    margin: 0 auto; /* Center the element horizontally */
+}
