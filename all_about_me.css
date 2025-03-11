@@ -19,14 +19,18 @@ body {
     color: white;
 }
 
-.about_me, .my_hobbies, .social_media, .achievements {
+.about_me, .my_hobbies, .social_media, .achievements, .home {
     color: white;
     text-decoration: none;
     position: relative;
 }
 
-
-.about_me::after, .my_hobbies::after, .social_media::after, .achievements::after {
+/* Hover Effect for Links */
+.about_me::after, 
+.my_hobbies::after, 
+.social_media::after, 
+.achievements::after, 
+.home::after {
     content: '';
     position: absolute;
     width: 0;
@@ -37,7 +41,11 @@ body {
     transition: width 0.3s ease-in-out;
 }
 
-.about_me:hover::after, .my_hobbies:hover::after, .social_media:hover::after, .achievements:hover::after {
+.about_me:hover::after, 
+.my_hobbies:hover::after, 
+.social_media:hover::after, 
+.achievements:hover::after,
+.home:hover::after {
     width: 100%;
 }
 
@@ -74,4 +82,9 @@ body {
 #about_me {
     position: relative;
     z-index: 1;
+}
+
+.home{
+    text-decoration: none;
+    color: white
 }
