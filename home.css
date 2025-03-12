@@ -1,6 +1,6 @@
 /* General Body Styling */
 body {
-    background-color: black;
+    background-color: #333333;
     color: white;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -64,9 +64,15 @@ body {
 /* Welcome Section */
 .welcome {
     text-align: center;
-    font-size: 30px;   /* Optional: adjust the font size if needed */
+    font-size: 30px;
     margin-top: 20px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowing text during animation */
+    border-right: 3px solid white; /* Simulates a typing cursor */
+    display: inline-block;
 }
+
 
 /* Image Styling */
 img {
@@ -94,6 +100,14 @@ img {
 }
 
 .socials img {
-    max-width: 100px; /* Adjust image width as needed */
-    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
 }
+
+.socials img:hover {
+    transform: scale(1.2); /* Increases size by 20% */
+}
+
+
+
