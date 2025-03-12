@@ -18,6 +18,15 @@
     position: relative; /* Add position relative for the animation */
 }
 
+.home_2{
+    text-decoration: none;
+    color: white;
+}
+
+.achievements{
+    color: white;
+    text-decoration: none;
+}
 .social_media_2{
     color:white;
     text-decoration: none;
@@ -35,7 +44,7 @@ body{
 }
 
 /* Add underline animation */
-.about_me_2::after, .my_hobbies_2::after, .social_media_2::after, .achievements {
+.about_me_2::after, .my_hobbies_2::after, .social_media_2::after, .achievements_2::after, .home_2::after {
     content: '';
     position: absolute;
     width: 0;
@@ -46,10 +55,10 @@ body{
     transition: width 0.3s ease-in-out;
 }
 
-.about_me_2:hover::after, .my_hobbies_2:hover::after, .social_media_2:hover::after {
+.about_me_2:hover::after, .my_hobbies_2:hover::after, .social_media_2:hover::after, .home_2:hover::after {
     width: 100%;
 }
 
-.tittle{
+.title{
     text-align: center;
 }

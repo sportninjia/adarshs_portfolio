@@ -19,7 +19,13 @@ body {
     gap: 20px;
     color: white;
     margin-top: 20px; /* Adjust spacing from title */
+    height: 300px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid black;
+    padding: 10px;
 }
+
+
 
 /* Common Styles for Navigation Links */
 .about_me, .my_hobbies, .social_media, .achievements, .home {
