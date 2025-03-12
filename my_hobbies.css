@@ -6,18 +6,6 @@
     gap: 20px;
 }
 
-.about_me_2{
-    color: white;
-    text-decoration: none;
-    position: relative;
-}
-
-.my_hobbies_2{
-    color: white;
-    text-decoration: none;
-    position: relative; /* Add position relative for the animation */
-}
-
 .home_2{
     text-decoration: none;
     color: white;
@@ -26,11 +14,6 @@
 .achievements{
     color: white;
     text-decoration: none;
-}
-.social_media_2{
-    color:white;
-    text-decoration: none;
-    position: relative;
 }
 
 body{
@@ -43,21 +26,33 @@ body{
     text-align: center;
 }
 
+.home{
+    text-decoration: none;
+    color: white;
+}
 /* Add underline animation */
-.about_me_2::after, .my_hobbies_2::after, .social_media_2::after, .achievements_2::after, .home_2::after {
+/* Style for individual class elements */
+.home, .achievements {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Underline animation on hover */
+  .home::after, .achievements::after {
     content: '';
     position: absolute;
+    bottom: 0;
+    left: 0;
     width: 0;
     height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: linear-gradient(to right, red, white);
-    transition: width 0.3s ease-in-out;
-}
-
-.about_me_2:hover::after, .my_hobbies_2:hover::after, .social_media_2:hover::after, .home_2:hover::after {
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+  
+  .home:hover::after, .achievements:hover::after {
     width: 100%;
-}
+  }
+  
 
 .title{
     text-align: center;

@@ -1,15 +1,24 @@
-body{
+/* Background and Text Color */
+body {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
-.title{
+
+/* Title Styling */
+.title {
     text-align: center;
     color: white;
 }
 
+/* Centered Navigation Links */
 .center_text {
     text-align: center;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .my_hobbies, .home {
@@ -19,6 +28,7 @@ body{
     margin: 0 10px;
 }
 
+/* Underline Animation for Links */
 .my_hobbies::after,
 .home::after {
     content: "";
@@ -37,5 +47,3 @@ body{
 .home:hover::after {
     transform: scaleX(1);
 }
-
-
