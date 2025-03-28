@@ -1,0 +1,81 @@
+/* Background and Text Color */
+body {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Title Styling */
+.title {
+    text-align: center;
+    color: white;
+}
+
+/* Centered Navigation Links */
+.center_text {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.my_hobbies, .home {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    margin: 0 10px;
+}
+
+/* Underline Animation for Links */
+.my_hobbies::after,
+.home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.my_hobbies:hover::after,
+.home:hover::after {
+    transform: scaleX(1);
+}
+
+.basketball {
+    width: 200px; /* Set width */
+    height: 200px; /* Equal to width to make a square */
+    background-color: #3498db; /* Example color */
+    border-radius: 20px; /* Smooth edges */
+    display: flex; /* Allows centering of content */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 20px auto; /* Center horizontally */
+}
+
+.dance{
+    text-align: center;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.paragraph{
+    text-align: center;
+}

@@ -1,0 +1,117 @@
+/* General Body Styling */
+body {
+    background-color: #333333;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Makes sure everything is centered vertically */
+}
+
+/* Navigation Links */
+.center_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+
+
+
+
+/* Common Styles for Navigation Links */
+.about_me, .my_hobbies, .social_media, .achievements, .home {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Hover Effect for Links */
+.about_me::after, 
+.my_hobbies::after, 
+.social_media::after, 
+.achievements::after, 
+.home::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(to right, red, red);
+    transition: width 0.3s ease-in-out;
+}
+
+.about_me:hover::after, 
+.my_hobbies:hover::after, 
+.social_media:hover::after, 
+.achievements:hover::after,
+.home:hover::after {
+    width: 100%;
+}
+
+/* Title Styling */
+.title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowing text during animation */
+    border-right: 3px solid white; /* Simulates a typing cursor */
+    display: inline-block;
+}
+
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+/* Align Inline Text with Home */
+.inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px; /* Ensures alignment with Home */
+}
+
+
+.socials {
+    display: flex; /* Uses flexbox to align images in a row */
+    justify-content: center; /* Centers images horizontally */
+    gap: 10px; /* Adds space between images */
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+}
+
+.socials img {
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.socials img:hover {
+    transform: scale(1.2); /* Increases size by 20% */
+}
+
+.one, .two, .three, .four, .five{
+    text-align: center;
+}

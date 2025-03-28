@@ -1,0 +1,77 @@
+.inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Ensures vertical centering */
+    text-align: center;
+    gap: 20px;
+}
+
+.home_2{
+    text-decoration: none;
+    color: white;
+}
+
+.achievements{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-color: #333333;
+    color: white;
+}
+
+.hobby_tittle{
+    justify-items: center;
+    text-align: center;
+}
+
+.home{
+    text-decoration: none;
+    color: white;
+}
+/* Add underline animation */
+/* Style for individual class elements */
+.home, .achievements {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Underline animation on hover */
+  .home::after, .achievements::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+  
+  .home:hover::after, .achievements:hover::after {
+    width: 100%;
+  }
+  
+.title{
+    text-align: center;
+    color: white;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cricket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discreption{
+    text-align: center;;
+}
