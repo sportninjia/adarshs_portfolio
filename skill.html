@@ -20,14 +20,23 @@
     <button id="submit" onclick="answer()">Submit</button>
 
     <script>
-        var searchAnswer = ["Who is Adarsh?"];
+        var searchAnswer = ["Who is Adarsh?","What was his first first programming language that he learned?", "Fun fact about Adarsh"];
 
         function answer() {
             var search = document.getElementById("search").value;
             var result = document.getElementById("result");
 
-            if (searchAnswer.includes(search)) {
+            if (searchAnswer.includes("Who is Adarsh?")) {
                 result.innerHTML = "Adarsh is a student at Waukee NW located in Waukee, Iowa";
+
+            }
+            if (searchAnswer.includes("What was his first first programming language that he learned?")){
+
+                result.innerHTML = "The first programming lanuage that Adarsh learned was HTML & CSS";
+
+            if (searchAnswer.includes("Fun fact about Adarsh")){
+                result.innnerHTML = "Adarsh's favorite sport is basketball"
+            
             } else {
                 result.innerHTML = "I don't know the answer to that question.";
             }
