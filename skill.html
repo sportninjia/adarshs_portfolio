@@ -15,12 +15,12 @@
     </p>
 
     <p id="result"></p> <!-- Output shown here -->
-
+    <div class="square"></div>
     <input type="text" id="search" placeholder="Enter">
     <button id="submit" onclick="answer()">Submit</button>
 
     <script>
-        var searchAnswer = ["Who is Adarsh?","What was his first first programming language that he learned?", "Fun fact about Adarsh"];
+        var searchAnswer = ["Who is Adarsh?","What was his first first programming language that he learned?", "Fun fact about Adarsh", "What languages can Adarsh speak?", "What is Adarsh's favorite movie?"];
 
         function answer() {
             var search = document.getElementById("search").value;
@@ -30,16 +30,27 @@
                 result.innerHTML = "Adarsh is a student at Waukee NW located in Waukee, Iowa";
 
             }
-            if (searchAnswer.includes("What was his first first programming language that he learned?")){
-
-                result.innerHTML = "The first programming lanuage that Adarsh learned was HTML & CSS";
-
-            if (searchAnswer.includes("Fun fact about Adarsh")){
-                result.innnerHTML = "Adarsh's favorite sport is basketball"
             
-            } else {
-                result.innerHTML = "I don't know the answer to that question.";
+            if (searchAnswer.includes("What was his first first programming language that he learned?")) {
+                result.innerHTML = "The first programming language that Adarsh learned was HTML & CSS";
+
             }
+            if (searchAnswer.includes("Fun fact about Adarsh")){
+                result.innerHTML = "Adarsh went to Taekwondo for 4 years";
+            }
+
+            if (searchAnswer.includes("What languages can Adarsh speak?")){
+                result.innerHTML = "Adarsh can speak english and malayalam";
+            }
+
+            if (searchAnswer.includes("What is Adarsh's favorite movie?")){
+                result.innerHTML = "Adarsh's favorite movie is Avengers Endgame";
+            }
+
+            else {
+                result.innerHTML = "Please enter a valid question.";
+            }
+
         }
     </script>
 </body>
