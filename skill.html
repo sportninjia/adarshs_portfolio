@@ -15,42 +15,37 @@
     </p>
 
     <p id="result"></p> <!-- Output shown here -->
-    <div class="square"></div>
-    <input type="text" id="search" placeholder="Enter">
-    <button id="submit" onclick="answer()">Submit</button>
+
+    <input type="text" id="search" placeholder="Please type your question" onkeydown="checkEnter(event)">
+    <!--<button id="submit" onclick="answer()">Submit</button>-->
+    <img src="images/arrow.png" id="submit" onclick="answer()">
 
     <script>
-        var searchAnswer = ["Who is Adarsh?","What was his first first programming language that he learned?", "Fun fact about Adarsh", "What languages can Adarsh speak?", "What is Adarsh's favorite movie?"];
+        var searchAnswer = ["Who is Adarsh?", "What was his first first programming language that he learned?", "Fun fact about Adarsh", "What languages can Adarsh speak?", "What is Adarsh's favorite movie?"];
 
         function answer() {
-            var search = document.getElementById("search").value;
+            var search = document.getElementById("search").value.toLowerCase();
             var result = document.getElementById("result");
 
-            if (searchAnswer.includes("Who is Adarsh?")) {
+            if (search === "Who is Adarsh?".toLowerCase()) {
                 result.innerHTML = "Adarsh is a student at Waukee NW located in Waukee, Iowa";
-
-            }
-            
-            if (searchAnswer.includes("What was his first first programming language that he learned?")) {
+            } else if (search === "What was his first first programming language that he learned?".toLowerCase()) {
                 result.innerHTML = "The first programming language that Adarsh learned was HTML & CSS";
-
-            }
-            if (searchAnswer.includes("Fun fact about Adarsh")){
+            } else if (search === "Fun fact about Adarsh".toLowerCase()) {
                 result.innerHTML = "Adarsh went to Taekwondo for 4 years";
-            }
-
-            if (searchAnswer.includes("What languages can Adarsh speak?")){
+            } else if (search === "What languages can Adarsh speak?".toLowerCase()) {
                 result.innerHTML = "Adarsh can speak english and malayalam";
-            }
-
-            if (searchAnswer.includes("What is Adarsh's favorite movie?")){
+            } else if (search === "What is Adarsh's favorite movie?".toLowerCase()) {
                 result.innerHTML = "Adarsh's favorite movie is Avengers Endgame";
-            }
-
-            else {
+            } else {
                 result.innerHTML = "Please enter a valid question.";
             }
+        }
 
+        function checkEnter(event) {
+            if (event.key === "Enter") {
+                answer();
+            }
         }
     </script>
 </body>

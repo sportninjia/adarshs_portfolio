@@ -43,9 +43,12 @@ body {
     cursor: pointer;
     margin-left: 10px;
     position: fixed;
-    bottom: 43px;
+    bottom: 40px;
     left: calc(50% + 28%);
     transform: translateX(-50%);
+    height: 20px;
+    width: 40px;
+    border-radius: 10px;
 }
 
 #submit:hover {
