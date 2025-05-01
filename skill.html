@@ -18,12 +18,7 @@
 
     <!--<input type="text" id="search" placeholder="Please type your question" onkeydown="checkEnter(event)"-->
     <select id="search" placeholder="Please type your question" onkeydown="checkEnter(event)">
-        <option value="Who is Adarsh?">Who is Adarsh?</option>
-        <option value="What was his first first programming language that he learned?">What was his first programming language that he learned?</option>
-        <option value="Fun fact about Adarsh">Fun fact about Adarsh</option>
-        <option value="What languages can Adarsh speak?">What languages can Adarsh speak?</option>
-        <option value="What is Adarsh's favorite movie?">What is Adarsh's favorite movie?</option>
-        <option value="What is Adarsh's favorite soccer team?">What is Adarsh's favorite soccer team?</option>
+        
     </select>
     <!--<button id="submit" onclick="answer()">Submit</button>-->
     <img src="images/arrow.png" id="submit" onclick="answer()">
@@ -32,34 +27,44 @@
 
 
     <script>
-        var searchAnswer = ["Who is Adarsh?", "What was his first first programming language that he learned?", "Fun fact about Adarsh", "What languages can Adarsh speak?", "What is Adarsh's favorite movie?", " What is Adarsh's favorite soccer team?"];
+        var searchAnswer = ["Who is Adarsh?", 
+        "What was his first first programming language that he learned?", 
+        "Fun fact about Adarsh", 
+        "What languages can he speak?", 
+        "What is Adarsh's favorite movie?", 
+        "What is Adarsh's favorite soccer team?"];
+
+        const searchDropdown = document.getElementById('search');
+        searchAnswer.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item;
+            option.textContent = item;
+            searchDropdown.appendChild(option);
+        });
 
         function answer() {
-            var search = document.getElementById("search").value.toLowerCase();
-            var result = document.getElementById("result");
-
+            const search = searchDropdown.value.toLowerCase();
+            const result = document.getElementById("result");
+            
             if (search === "Who is Adarsh?".toLowerCase()) {
                 result.innerHTML = "Adarsh is a student at Waukee NW located in Waukee, Iowa";
             }  
-            if (search === "What was his first first programming language that he learned?".toLowerCase()) {
+            else if (search === "What was his first first programming language that he learned?".toLowerCase()) {
                 result.innerHTML = "The first programming language that Adarsh learned was HTML & CSS";
             }  
-            if (search === "Fun fact about Adarsh".toLowerCase()) {
+            else if (search === "Fun fact about Adarsh".toLowerCase()) {
                 result.innerHTML = "Adarsh went to Taekwondo for 4 years";
             }  
-            if (search === "What languages can Adarsh speak?".toLowerCase()) {
+            else if (search === "What languages can Adarsh speak?".toLowerCase()) {
                 result.innerHTML = "Adarsh can speak english and malayalam";
             } 
-            if (search === "What is Adarsh's favorite movie?".toLowerCase()) {
+            else if (search === "What is Adarsh's favorite movie?".toLowerCase()) {
                 result.innerHTML = "Adarsh's favorite movie is Avengers Endgame";
             }
-            if (search === "What is Adarsh's favorite soccer team?".toLowerCase()) {
+            else if (search === "What is Adarsh's favorite soccer team?".toLowerCase()) {
                 result.innerHTML = "Adarsh's favorite soccer team is Manchester United and Doortmund FC";
-            } 
+            }             
         }
-
-        
-
         
           
     </script>
