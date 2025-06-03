@@ -6,12 +6,8 @@
     gap: 20px;
 }
 
-.home_2{
-    text-decoration: none;
-    color: white;
-}
 
-.achievements{
+.achievements, .questions, .home{
     color: white;
     text-decoration: none;
 }
@@ -26,19 +22,15 @@ body{
     text-align: center;
 }
 
-.home{
-    text-decoration: none;
-    color: white;
-}
 /* Add underline animation */
 /* Style for individual class elements */
-.home, .achievements {
+.home, .achievements, .questions {
     position: relative;
     display: inline-block;
   }
   
   /* Underline animation on hover */
-  .home::after, .achievements::after {
+  .home::after, .achievements::after, .questions::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -49,7 +41,7 @@ body{
     transition: width 0.3s ease;
   }
   
-  .home:hover::after, .achievements:hover::after {
+  .home:hover::after, .achievements:hover::after, .questions:hover::after {
     width: 100%;
   }
   

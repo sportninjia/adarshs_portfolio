@@ -22,7 +22,7 @@ body {
     margin-bottom: 20px;
 }
 
-.my_hobbies, .home {
+.my_hobbies, .home, .questions {
     text-decoration: none;
     color: white;
     position: relative;
@@ -31,7 +31,8 @@ body {
 
 /* Underline Animation for Links */
 .my_hobbies::after,
-.home::after {
+.home::after,
+.questions::after {
     content: "";
     position: absolute;
     left: 0;
@@ -45,12 +46,13 @@ body {
 }
 
 .my_hobbies:hover::after,
-.home:hover::after {
+.home:hover::after,
+.questions:hover::after {
     transform: scaleX(1);
 }
 
 .basketball {
-    width: 200px; /* Set width */
+    width: 200px;
     height: 200px; /* Equal to width to make a square */
     background-color: #3498db; /* Example color */
     border-radius: 20px; /* Smooth edges */

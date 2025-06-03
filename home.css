@@ -20,12 +20,40 @@ body {
     color: white;
 }
 
+/* Loader Styles */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
 
-
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* Common Styles for Navigation Links */
-.about_me, .my_hobbies, .social_media, .achievements, .home {
+.about_me, .my_hobbies, .social_media, .achievements, .home, .questions {
     color: white;
     text-decoration: none;
     position: relative;
@@ -34,7 +62,7 @@ body {
 /* Hover Effect for Links */
 .about_me::after, 
 .my_hobbies::after, 
-.social_media::after, 
+.questions::after, 
 .achievements::after, 
 .home::after {
     content: '';
@@ -49,7 +77,7 @@ body {
 
 .about_me:hover::after, 
 .my_hobbies:hover::after, 
-.social_media:hover::after, 
+.questions:hover::after,
 .achievements:hover::after,
 .home:hover::after {
     width: 100%;

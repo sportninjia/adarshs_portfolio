@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-
-    
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
 
     <!-- Welcome Section -->
     <div>
@@ -18,6 +20,7 @@
     <div class="center_text">
         <a href="my_hobbies.html" class="my_hobbies">Hobbies</a> 
         <a href="achievements.html" class="achievements">Accomplishments </a>
+        <a href="skill.html" class="questions">Q&A</a>
     </div> 
 
     <div class="socials">
@@ -27,14 +30,18 @@
         <a href="https://github.com/sportninjia" target="_blank"><img src="images/GH.png"></a>
     </div>
 
-    
-    
-
     <div class="picture">
         <h1 class="one">Hi, I'm Adarsh</h1>
         <p class="two">I am passionate about collaborating on innovative projects and thrive in team environments. My primary interests lie in the fields of Computer Science and Business.</p>
- 
-
         <img class="picture" src="images/ADARSH.JPG" height="200" wdith="200">
     </div>
+
+    <!-- JavaScript -->
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            loader.style.display = "none";
+        });
+    </script>
+</body>
 </html>

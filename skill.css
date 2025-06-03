@@ -1,0 +1,114 @@
+body {
+    background-color: #333333;
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#result {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+#search {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 20px auto;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    position: fixed;
+    bottom: 40px;
+    left: calc(50% + 28%);
+    transform: translateX(-50%);
+    height: 20px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: #2980b9;
+}
+
+.square{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    left: 0%;
+}
+
+.collapsible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #f0f0f0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .collapsible.open {
+    max-height: 200px; /* you can adjust */
+    padding: 10px;
+  }
+
+#result{
+    padding-top: 170px;
+    font-size: 56px;
+    font-family: cursive;
+}
+
+.about_me, .hobbies, .achievements, .home {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Hover Effect for Links */
+.about_me::after, 
+.hobbies::after, 
+.achievements::after, 
+.home::after {
+
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(to right, red, red);
+    transition: width 0.3s ease-in-out;
+}
+
+.about_me:hover::after, 
+.hobbies:hover::after, 
+.achievements:hover::after,
+.home:hover::after {
+    width: 100%;
+}
