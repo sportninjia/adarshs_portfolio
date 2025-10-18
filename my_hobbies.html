@@ -5,38 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh's Portfolio | Hobbies</title>
     <link rel="stylesheet" href="my_hobbies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-    <h1 class="title">My Hobbies</h1>
-    <p class="inline">
-        <a href="index.html" class="home">Home</a>
-        <a href="achievements.html" class="achievements">Accomplishments </a>
-        <a href="skill.html" class="questions">Q&A</a>
-    </p>
+<body>
+    <header class="site-header">
+        <div class="brand">Adarsh Patel</div>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="achievements.html">Accomplishments</a>
+            <a href="my_hobbies.html" aria-current="page">Hobbies</a>
+            <a href="skill.html">Q&A</a>
+        </nav>
+    </header>
 
+    <main class="page">
+        <section class="hero">
+            <div class="hero__content">
+                <p class="eyebrow">Beyond the classroom</p>
+                <h1>Fueling creativity through play, sport, and storytelling</h1>
+                <p class="lead">My hobbies keep me balanced and energized. Whether I’m competing on the court, editing a new video, or building a project, each pastime teaches discipline, teamwork, and joy.</p>
+                <div class="interest-tags" role="list">
+                    <span class="tag" role="listitem">Gaming &amp; Streaming</span>
+                    <span class="tag" role="listitem">Basketball</span>
+                    <span class="tag" role="listitem">Cricket</span>
+                    <span class="tag" role="listitem">Programming</span>
+                    <span class="tag" role="listitem">Dance &amp; Music</span>
+                </div>
+            </div>
+            <div class="hero__media">
+                <div class="media-card">
+                    <h2>Sport Ninja</h2>
+                    <p>My YouTube hub for gameplay breakdowns, highlight reels, and creative storytelling around sports and esports.</p>
+                    <a class="btn secondary" href="https://www.youtube.com" target="_blank" rel="noopener">Visit channel</a>
+                </div>
+            </div>
+        </section>
 
-    <p class="discreption">
-        I have a diverse range of interests, including video games, basketball, programming, and cricket. I operate a YouTube channel named "Sport Ninja," where I share content related to video games, primarily focusing on EA FC and Fortnite.
-        My enthusiasm for cricket started early, and I support teams such as Team India and Team USA while playing for a team called WIM. In basketball, I have been a long-time fan of the Los Angeles Lakers and have played competitively, including winning the I9 basketball league in fourth grade and representing my school in eighth and ninth grades.
-        Although I engage in programming, I regard it as my least preferred hobby. Nevertheless, a key goal during my junior year of high school was to create a website, which I successfully achieved.
-    </p>
+        <section class="hobby-grid" aria-label="Hobby spotlights">
+            <article class="hobby-card">
+                <div class="hobby-card__header">
+                    <span class="icon" aria-hidden="true">🎮</span>
+                    <h2>Gaming &amp; Content Creation</h2>
+                </div>
+                <p>I host livestreams and produce videos featuring EA FC and Fortnite. By refining storytelling and editing, I connect with viewers who share my love for competitive play.</p>
+                <ul>
+                    <li>Script, record, and edit weekly content drops.</li>
+                    <li>Experiment with thumbnails and analytics to grow reach.</li>
+                    <li>Collaborate with friends to co-stream special events.</li>
+                </ul>
+            </article>
+            <article class="hobby-card">
+                <div class="hobby-card__header">
+                    <span class="icon" aria-hidden="true">🏀</span>
+                    <h2>Basketball</h2>
+                </div>
+                <p>From elementary leagues to representing my school, basketball has taught me resilience, teamwork, and strategy. I stay inspired by the Los Angeles Lakers.</p>
+                <ul>
+                    <li>Championed the I9 basketball league title in fourth grade.</li>
+                    <li>Competed on school teams throughout middle and high school.</li>
+                    <li>Lead pickup games that emphasize mentorship and fun.</li>
+                </ul>
+            </article>
+            <article class="hobby-card">
+                <div class="hobby-card__header">
+                    <span class="icon" aria-hidden="true">🏏</span>
+                    <h2>Cricket</h2>
+                </div>
+                <p>Growing up cheering for Team India and Team USA, cricket is a huge part of my identity. I play for WIM and constantly sharpen my batting and fielding skills.</p>
+                <ul>
+                    <li>Study international matches to analyze tactics.</li>
+                    <li>Practice with teammates to improve communication.</li>
+                    <li>Stay active in local tournaments and friendly leagues.</li>
+                </ul>
+            </article>
+            <article class="hobby-card">
+                <div class="hobby-card__header">
+                    <span class="icon" aria-hidden="true">💻</span>
+                    <h2>Programming</h2>
+                </div>
+                <p>While not always my first choice, coding challenges me to think critically. Building this portfolio has sparked new ideas for future web experiences.</p>
+                <ul>
+                    <li>Experiment with HTML, CSS, and Python projects.</li>
+                    <li>Create utility scripts that streamline everyday tasks.</li>
+                    <li>Document lessons learned to help fellow students.</li>
+                </ul>
+            </article>
+        </section>
 
-    <div class="images">
-        <span>
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-youtube-logo-icon-download-in-svg-png-gif-file-formats--social-media-70-flat-icons-color-pack-logos-432560.png?f=webp&w=256" alt="YouTube Logo">
-        </span>
-        <span>
-            <img src="https://www.i9sportsfranchise.com/wp-content/uploads/2021/07/Beige-Minimalistic-Organic-Honey-Label-1.png" alt="I9 Sports Logo" height="200" width="350">
-        </span>
-    </div>
-    
-    <div class="cricket-container">
-        <div class="cricket">
-            <video height="300" width="400" autoplay loop muted>
-                <source src="videos/cricket.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-    
-    </div>
+        <section class="feature">
+            <div class="feature__media">
+                <video class="feature__video" height="300" width="400" controls loop muted poster="images/cricket_poster.jpg">
+                    <source src="videos/cricket.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="feature__content">
+                <p class="eyebrow">On the field</p>
+                <h2>Cricket keeps me grounded</h2>
+                <p class="lead">Staying sharp as an all-rounder means practicing footwork, keeping reflexes quick, and leaning on teammates. It’s where strategy, athleticism, and friendship come together.</p>
+                <div class="feature__stats">
+                    <div class="stat">
+                        <span class="stat__label">Favorite Teams</span>
+                        <span class="stat__value">India &amp; USA</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__label">Club</span>
+                        <span class="stat__value">WIM Cricket</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__label">Role</span>
+                        <span class="stat__value">All-Rounder</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" aria-label="Visual highlights">
+            <figure>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-youtube-logo-icon-download-in-svg-png-gif-file-formats--social-media-70-flat-icons-color-pack-logos-432560.png?f=webp&w=256" alt="YouTube logo representing the Sport Ninja channel" loading="lazy">
+                <figcaption>Sport Ninja channel artwork for upcoming uploads.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.i9sportsfranchise.com/wp-content/uploads/2021/07/Beige-Minimalistic-Organic-Honey-Label-1.png" alt="I9 Sports league logo" loading="lazy">
+                <figcaption>I9 Sports memories from championship season.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <small>&copy; <span id="year"></span> Adarsh Patel. All rights reserved.</small>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

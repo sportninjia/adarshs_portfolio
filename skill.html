@@ -1,72 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="skill.css">
     <title>Q&A</title>
+    <link rel="stylesheet" href="skill.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="title">Q&A</h1>
-    <p class="inline">
-        <a href="index.html" class="home">Home</a>
-        <a href="achievements.html" class="achievements">Accomplishments</a>
-        <a href="my_hobbies.html" class="hobbies">Hobbies</a>
-    </p>
+    <header class="site-header">
+        <div class="brand">AR</div>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" class="home">Home</a>
+            <a href="my_hobbies.html" class="my_hobbies">Hobbies</a>
+            <a href="achievements.html" class="achievements">Accomplishments</a>
+            <a href="skill.html" class="questions" aria-current="page">Q&amp;A</a>
+        </nav>
+    </header>
 
-    <p id="result"></p> <!-- Output shown here -->
+    <main class="page">
+        <section class="hero" aria-labelledby="qa-title">
+            <div class="hero__content">
+                <p class="eyebrow">Ask me anything</p>
+                <h1 id="qa-title">Get quick answers about Adarsh</h1>
+                <p class="lead">From the projects I'm proud of to the hobbies I unwind with, this page curates the questions I hear most often. Use the search to jump straight to what you're curious about or browse the featured topics below.</p>
+                <div class="hero__highlights" role="list">
+                    <div class="highlight" role="listitem">
+                        <span class="highlight__label">Experience</span>
+                        <span class="highlight__value">Student developer &amp; teammate</span>
+                    </div>
+                    <div class="highlight" role="listitem">
+                        <span class="highlight__label">Interests</span>
+                        <span class="highlight__value">Coding, cricket, storytelling</span>
+                    </div>
+                    <div class="highlight" role="listitem">
+                        <span class="highlight__label">Fun fact</span>
+                        <span class="highlight__value">Taekwondo for four years</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__card" aria-hidden="true">
+                <div class="hero__badge">Curious collaborator</div>
+                <p>Whether you're a classmate, mentor, or recruiter, this Q&amp;A is built to help us connect faster.</p>
+            </div>
+        </section>
 
-    <!--<input type="text" id="search" placeholder="Please type your question" onkeydown="checkEnter(event)"-->
-    <select id="search" placeholder="Please type your question" onkeydown="checkEnter(event)">
-        
-    </select>
-    <!--<button id="submit" onclick="answer()">Submit</button>-->
-    <img src="images/arrow.png" id="submit" onclick="answer()">
+        <section class="faq-search" aria-label="Filter questions">
+            <form role="search" class="search-form" onsubmit="event.preventDefault();">
+                <label for="faq-search-input" class="sr-only">Search questions</label>
+                <div class="input-group">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16a6.471 6.471 0 0 0 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    <input type="search" id="faq-search-input" placeholder="Search by question, topic, or keyword" autocomplete="off">
+                    <button type="button" id="clear-search" aria-label="Clear search">&times;</button>
+                </div>
+            </form>
+            <div class="filter-buttons" role="group" aria-label="Filter by topic">
+                <button type="button" data-filter="all" class="is-active">All</button>
+                <button type="button" data-filter="about">About</button>
+                <button type="button" data-filter="experience">Experience</button>
+                <button type="button" data-filter="favorites">Favorites</button>
+                <button type="button" data-filter="fun">Fun</button>
+            </div>
+        </section>
 
-   
+        <section class="faq" aria-label="Frequently asked questions">
+            <div class="faq-grid">
+                <details class="faq-item" open data-tags="about,experience" data-question="Who is Adarsh?" data-answer="Adarsh is a student at Waukee NW located in Waukee, Iowa.">
+                    <summary>Who is Adarsh?</summary>
+                    <p>Adarsh is a student at Waukee Northwest High School in Waukee, Iowa, where he pursues opportunities to lead, collaborate, and grow his technical skills.</p>
+                </details>
+                <details class="faq-item" data-tags="experience" data-question="What was his first programming language?" data-answer="The first programming language that Adarsh learned was HTML and CSS.">
+                    <summary>What was the first programming language he learned?</summary>
+                    <p>The first programming languages Adarsh learned were HTML and CSS, which sparked his passion for building polished, user-friendly experiences.</p>
+                </details>
+                <details class="faq-item" data-tags="experience" data-question="What skills does Adarsh use today?" data-answer="Adarsh works with HTML, CSS, JavaScript, Python, and team collaboration tools.">
+                    <summary>What skills does he use today?</summary>
+                    <p>He regularly works with HTML, CSS, JavaScript, and Python, pairing them with collaboration tools like GitHub and Figma to ship team projects efficiently.</p>
+                </details>
+                <details class="faq-item" data-tags="about,favorites" data-question="What languages can Adarsh speak?" data-answer="Adarsh can speak English and Malayalam.">
+                    <summary>What languages can he speak?</summary>
+                    <p>Adarsh speaks both English and Malayalam fluently, helping him connect with a wide range of communities.</p>
+                </details>
+                <details class="faq-item" data-tags="favorites" data-question="What is Adarsh's favorite movie?" data-answer="Adarsh's favorite movie is Avengers: Endgame.">
+                    <summary>What is his favorite movie?</summary>
+                    <p>He never gets tired of rewatching <em>Avengers: Endgame</em> because of its blend of high-stakes storytelling and inspiring teamwork.</p>
+                </details>
+                <details class="faq-item" data-tags="favorites" data-question="What is Adarsh's favorite soccer team?" data-answer="Adarsh's favorite soccer teams are Manchester United and Borussia Dortmund.">
+                    <summary>What soccer teams does he support?</summary>
+                    <p>Adarsh proudly supports Manchester United and Borussia Dortmund, admiring their legacy of passion and resilience on the pitch.</p>
+                </details>
+                <details class="faq-item" data-tags="fun" data-question="Fun fact about Adarsh" data-answer="Adarsh trained in Taekwondo for four years.">
+                    <summary>What's a fun fact about him?</summary>
+                    <p>He practiced Taekwondo for four years, earning discipline and confidence that he now channels into academics and teamwork.</p>
+                </details>
+                <details class="faq-item" data-tags="fun,favorites" data-question="What does Adarsh do for fun?" data-answer="Adarsh enjoys cricket, video storytelling, and collaborating on new ideas.">
+                    <summary>What does he do for fun?</summary>
+                    <p>Outside of school, you can find Adarsh playing cricket, producing YouTube videos, and brainstorming new ideas with friends.</p>
+                </details>
+            </div>
+            <p class="empty-state" role="status" hidden>No questions match your search just yet. Try another keyword or reset the filters.</p>
+        </section>
 
+        <section class="contact-cta" aria-labelledby="cta-title">
+            <div class="contact-card">
+                <h2 id="cta-title">Still curious?</h2>
+                <p>If you have a question that isn’t covered here, I’d love to hear it. Reach out and I’ll respond as soon as I can.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Let’s build something great together.</p>
+    </footer>
 
     <script>
-        var searchAnswer = ["Who is Adarsh?", 
-        "What was his first first programming language that he learned?", 
-        "Fun fact about Adarsh", 
-        "What languages can he speak?", 
-        "What is Adarsh's favorite movie?", 
-        "What is Adarsh's favorite soccer team?"];
+        const searchInput = document.getElementById('faq-search-input');
+        const clearButton = document.getElementById('clear-search');
+        const filterButtons = document.querySelectorAll('[data-filter]');
+        const faqItems = Array.from(document.querySelectorAll('.faq-item'));
+        const emptyState = document.querySelector('.empty-state');
+        let activeFilter = 'all';
 
-        const searchDropdown = document.getElementById('search');
-        searchAnswer.forEach(item => {
-            const option = document.createElement('option');
-            option.value = item;
-            option.textContent = item;
-            searchDropdown.appendChild(option);
+        function filterFaqs() {
+            const term = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+
+            faqItems.forEach(item => {
+                const tags = item.dataset.tags.split(',').map(tag => tag.trim());
+                const matchesFilter = activeFilter === 'all' || tags.includes(activeFilter);
+                const haystack = `${item.dataset.question} ${item.dataset.answer} ${tags.join(' ')}`.toLowerCase();
+                const matchesSearch = !term || haystack.includes(term);
+                const isVisible = matchesFilter && matchesSearch;
+
+                item.toggleAttribute('hidden', !isVisible);
+                item.classList.toggle('is-hidden', !isVisible);
+
+                if (isVisible) {
+                    visibleCount += 1;
+                }
+            });
+
+            emptyState.toggleAttribute('hidden', visibleCount !== 0);
+        }
+
+        searchInput.addEventListener('input', filterFaqs);
+        clearButton.addEventListener('click', () => {
+            searchInput.value = '';
+            searchInput.focus();
+            filterFaqs();
         });
 
-        function answer() {
-            const search = searchDropdown.value.toLowerCase();
-            const result = document.getElementById("result");
-            
-            if (search === "Who is Adarsh?".toLowerCase()) {
-                result.innerHTML = "Adarsh is a student at Waukee NW located in Waukee, Iowa";
-            }  
-            else if (search === "What was his first first programming language that he learned?".toLowerCase()) {
-                result.innerHTML = "The first programming language that Adarsh learned was HTML & CSS";
-            }  
-            else if (search === "Fun fact about Adarsh".toLowerCase()) {
-                result.innerHTML = "Adarsh went to Taekwondo for 4 years";
-            }  
-            else if (search === "What languages can Adarsh speak?".toLowerCase()) {
-                result.innerHTML = "Adarsh can speak english and malayalam";
-            } 
-            else if (search === "What is Adarsh's favorite movie?".toLowerCase()) {
-                result.innerHTML = "Adarsh's favorite movie is Avengers Endgame";
-            }
-            else if (search === "What is Adarsh's favorite soccer team?".toLowerCase()) {
-                result.innerHTML = "Adarsh's favorite soccer team is Manchester United and Doortmund FC";
-            }             
-        }
-        
-          
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                activeFilter = button.dataset.filter;
+                filterButtons.forEach(btn => btn.classList.toggle('is-active', btn === button));
+                filterFaqs();
+            });
+        });
+
+        filterFaqs();
     </script>
 </body>
 </html>
