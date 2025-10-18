@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh's Portfolio</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Loader -->
@@ -12,29 +15,75 @@
         <div class="spinner"></div>
     </div>
 
-    <!-- Welcome Section -->
-    <div>
-        <h1 class="welcome">Welcome To My Personal Portfolio</h1>
-    </div>
+    <header class="site-header">
+        <div class="brand">AR</div>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" class="home">Home</a>
+            <a href="my_hobbies.html" class="my_hobbies">Hobbies</a>
+            <a href="achievements.html" class="achievements">Accomplishments</a>
+            <a href="skill.html" class="questions">Q&amp;A</a>
+        </nav>
+    </header>
 
-    <div class="center_text">
-        <a href="my_hobbies.html" class="my_hobbies">Hobbies</a> 
-        <a href="achievements.html" class="achievements">Accomplishments </a>
-        <a href="skill.html" class="questions">Q&A</a>
-    </div> 
+    <main class="hero" role="main">
+        <section class="hero__content">
+            <p class="eyebrow">Welcome to my personal portfolio</p>
+            <h1>Hi, I'm Adarsh</h1>
+            <p class="lead">
+                I thrive on collaborating with teams to build thoughtful, people-first solutions. My curiosity lives at
+                the intersection of <strong>computer science</strong> and <strong>business strategy</strong>, where I love turning ideas into products that matter.
+            </p>
+            <div class="cta-group">
+                <a class="btn primary" href="achievements.html">View achievements</a>
+                <a class="btn secondary" href="my_hobbies.html">Discover hobbies</a>
+            </div>
+            <ul class="socials" aria-label="Social media profiles">
+                <li><a href="https://twitter.com/AdarshRajesh7" target="_blank" rel="noreferrer"><span class="sr-only">Twitter</span><img src="images/x_logo_one.png" alt="Twitter" height="48" width="48"></a></li>
+                <li><a href="https://www.linkedin.com/in/adarsh-rajesh-b0a605336/" target="_blank" rel="noreferrer"><span class="sr-only">LinkedIn</span><img src="images/linkedin_logo.png" alt="LinkedIn" height="48" width="48"></a></li>
+                <li><a href="https://www.youtube.com/@sport_ninja" target="_blank" rel="noreferrer"><span class="sr-only">YouTube</span><img src="images/youtube_logo.png" alt="YouTube" height="48" width="48"></a></li>
+                <li><a href="https://github.com/sportninjia" target="_blank" rel="noreferrer"><span class="sr-only">GitHub</span><img src="images/GH.png" alt="GitHub" height="48" width="48"></a></li>
+            </ul>
+        </section>
 
-    <div class="socials">
-        <a href="https://twitter.com/AdarshRajesh7" target="_blank"><img src="images/x_logo_one.png" height="200" width="200"></a>
-        <a href="https://www.linkedin.com/in/adarsh-rajesh-b0a605336/" target="_blank"><img src="images/linkedin_logo.png" height="100" width="100"></a>
-        <a href="https://www.youtube.com/@sport_ninja" target="_blank"><img src="images/youtube_logo.png" height="100" width="100"></a>
-        <a href="https://github.com/sportninjia" target="_blank"><img src="images/GH.png"></a>
-    </div>
+        <aside class="hero__media">
+            <div class="portrait-card">
+                <img src="images/ADARSH.JPG" alt="Adarsh smiling" class="portrait">
+                <ul class="tag-list" aria-label="Key strengths">
+                    <li>Team Player</li>
+                    <li>Problem Solver</li>
+                    <li>Lifelong Learner</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
 
-    <div class="picture">
-        <h1 class="one">Hi, I'm Adarsh</h1>
-        <p class="two">I am passionate about collaborating on innovative projects and thrive in team environments. My primary interests lie in the fields of Computer Science and Business.</p>
-        <img class="picture" src="images/ADARSH.JPG" height="200" wdith="200">
-    </div>
+    <section class="highlights" aria-labelledby="highlights-title">
+        <div class="section-header">
+            <h2 id="highlights-title">Explore more about me</h2>
+            <p>Jump straight into the areas that interest you most.</p>
+        </div>
+        <div class="card-grid">
+            <a class="info-card" href="achievements.html">
+                <h3>Accomplishments</h3>
+                <p>Discover projects, awards, and milestones that shaped my journey.</p>
+                <span class="card-link">See highlights →</span>
+            </a>
+            <a class="info-card" href="my_hobbies.html">
+                <h3>Hobbies</h3>
+                <p>From sports to storytelling, explore what energizes me outside of work.</p>
+                <span class="card-link">Take a look →</span>
+            </a>
+            <a class="info-card" href="skill.html">
+                <h3>Q&amp;A</h3>
+                <p>Get quick answers about my skills, interests, and ways we can collaborate.</p>
+                <span class="card-link">Read more →</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Let’s build something great together. <a href="mailto:adarshrajesh318@gmail.com">Contact me</a>.</p>
+    </footer>
 
     <!-- JavaScript -->
     <script>
