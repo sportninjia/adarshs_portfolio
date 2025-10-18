@@ -1,11 +1,12 @@
 /* Background and Text Color */
 body {
-    background-color: black;
+    background-color: #333333;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Title Styling */
@@ -21,7 +22,7 @@ body {
     margin-bottom: 20px;
 }
 
-.my_hobbies, .home {
+.my_hobbies, .home, .questions {
     text-decoration: none;
     color: white;
     position: relative;
@@ -30,7 +31,8 @@ body {
 
 /* Underline Animation for Links */
 .my_hobbies::after,
-.home::after {
+.home::after,
+.questions::after {
     content: "";
     position: absolute;
     left: 0;
@@ -44,6 +46,38 @@ body {
 }
 
 .my_hobbies:hover::after,
-.home:hover::after {
+.home:hover::after,
+.questions:hover::after {
     transform: scaleX(1);
+}
+
+.basketball {
+    width: 200px;
+    height: 200px; /* Equal to width to make a square */
+    background-color: #3498db; /* Example color */
+    border-radius: 20px; /* Smooth edges */
+    display: flex; /* Allows centering of content */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 20px auto; /* Center horizontally */
+}
+
+.dance{
+    text-align: center;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.paragraph{
+    text-align: center;
 }
