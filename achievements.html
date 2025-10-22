@@ -3,132 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adarsh's Portfolio | Accomplishments</title>
-    <link rel="stylesheet" href="achievements.css">
+    <title>Accomplishments · Adarsh Rajesh</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/achievements.css">
 </head>
 <body>
     <header class="site-header">
-        <div class="brand">Adarsh Patel</div>
-        <nav class="site-nav" aria-label="Primary navigation">
-            <a href="index.html">Home</a>
-            <a href="achievements.html" aria-current="page">Accomplishments</a>
-            <a href="my_hobbies.html">Hobbies</a>
-            <a href="skill.html">Q&A</a>
+        <div class="brand">AR</div>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" class="home">Home</a>
+            <a href="my_hobbies.html" class="my_hobbies">Hobbies</a>
+            <a href="achievements.html" class="achievements" aria-current="page">Accomplishments</a>
+            <a href="skill.html" class="questions">Q&amp;A</a>
         </nav>
     </header>
 
-    <main class="page">
+    <main class="page" aria-labelledby="accomplishments-title">
         <section class="hero">
             <div class="hero__content">
-                <p class="eyebrow">Milestones</p>
-                <h1>Celebrating growth through curiosity and grit</h1>
-                <p class="lead">Each achievement represents the late nights spent refining ideas, practicing leadership, and taking on challenges across robotics, business, and academics. Here are the moments that shaped my journey so far.</p>
-                <div class="hero__stats" role="list">
-                    <div class="stat" role="listitem">
-                        <span class="stat__label">FTC Robotics</span>
-                        <span class="stat__value">State Qualifier</span>
+                <span class="hero__eyebrow">Accomplishments</span>
+                <h1 class="hero__title" id="accomplishments-title">Highlights from my journey so far</h1>
+                <p class="hero__description">
+                    Every milestone has come from curiosity, teamwork, and a drive to solve real problems. From coding projects
+                    to leadership roles, these accomplishments represent the communities and mentors who have shaped me.
+                </p>
+                <div class="hero__stats">
+                    <div class="stat-card">
+                        <strong>12+</strong>
+                        <span>Hackathons &amp; competitions</span>
                     </div>
-                    <div class="stat" role="listitem">
-                        <span class="stat__label">Academic Honors</span>
-                        <span class="stat__value">Iowa Senate Recognition</span>
+                    <div class="stat-card">
+                        <strong>5</strong>
+                        <span>Leadership roles held</span>
                     </div>
-                    <div class="stat" role="listitem">
-                        <span class="stat__label">Leadership</span>
-                        <span class="stat__value">STEM Advocate</span>
+                    <div class="stat-card">
+                        <strong>3</strong>
+                        <span>Community initiatives launched</span>
                     </div>
                 </div>
             </div>
-            <figure class="hero__media">
-                <img src="images/IA_SENATE.jpg" alt="Certificate from the Iowa State Senate recognizing Adarsh" loading="lazy">
-                <figcaption>Honored by the Iowa State Senate for academic excellence and community impact.</figcaption>
-            </figure>
+            <div class="hero__stats">
+                <div class="stat-card">
+                    <strong>400+</strong>
+                    <span>Hours invested in learning &amp; mentoring</span>
+                </div>
+                <div class="stat-card">
+                    <strong>8</strong>
+                    <span>Team projects shipped</span>
+                </div>
+            </div>
         </section>
 
-        <section class="achievements">
-            <div class="section-heading">
-                <p class="eyebrow">Highlights</p>
-                <h2>Proud accomplishments from classrooms to competitions</h2>
-                <p class="lead">From competing on robotics fields to building entrepreneurial ideas, I seek opportunities that combine creativity with impact.</p>
+        <section class="section" aria-labelledby="spotlight-title">
+            <div class="section-header">
+                <h2 id="spotlight-title">Spotlight achievements</h2>
+                <p>A snapshot of projects and recognitions that taught me the most about resilience, empathy, and creativity.</p>
             </div>
-            <div class="achievements__grid">
-                <article class="achievement-card">
-                    <h3>FTC Robotics State Qualifier</h3>
-                    <p>Joined the FTC robotics team and helped engineer a robot that qualified for the Iowa State Championship within six months.</p>
-                    <ul>
-                        <li>Led programming sprints to automate scoring.</li>
-                        <li>Coordinated strategy sessions before each match.</li>
-                        <li>Documented design iterations for judges.</li>
-                    </ul>
+            <div class="highlight-grid">
+                <article class="highlight-card">
+                    <h3>Student leadership council</h3>
+                    <p>Represented my grade by organizing school-wide initiatives, facilitating student feedback sessions, and
+                        partnering with faculty to launch inclusive events.</p>
                 </article>
-                <article class="achievement-card">
-                    <h3>Iowa Senate Commendation</h3>
-                    <p>Recognized for academic excellence, leadership, and dedication to STEM outreach within the local community.</p>
-                    <ul>
-                        <li>Mentored younger students through robotics demos.</li>
-                        <li>Organized study groups that raised class averages.</li>
-                        <li>Presented STEM career pathways at community events.</li>
-                    </ul>
+                <article class="highlight-card">
+                    <h3>State technology challenge finalist</h3>
+                    <p>Prototyped a digital tool that helped classmates manage homework deadlines, leveraging user interviews to
+                        refine features and improve accessibility.</p>
                 </article>
-                <article class="achievement-card">
-                    <h3>Entrepreneurial Initiatives</h3>
-                    <p>Explored the intersection of business and technology by prototyping solutions that blend automation and user experience.</p>
-                    <ul>
-                        <li>Designed web experiences with HTML, CSS, and Python.</li>
-                        <li>Researched market fit for student-led ventures.</li>
-                        <li>Collaborated with peers to pitch innovation ideas.</li>
-                    </ul>
+                <article class="highlight-card">
+                    <h3>YouTube storytelling</h3>
+                    <p>Produced and edited sports-focused videos that reached thousands of viewers, honing scripting, editing,
+                        and audience engagement skills.</p>
                 </article>
             </div>
         </section>
 
-        <section class="timeline" aria-labelledby="timeline-heading">
-            <div class="section-heading">
-                <p class="eyebrow">Timeline</p>
-                <h2 id="timeline-heading">Moments that shaped my journey</h2>
+        <section class="milestones" aria-labelledby="milestones-title">
+            <div class="section-header">
+                <h2 id="milestones-title">Milestones timeline</h2>
+                <p>From early tinkering with HTML to leading multi-person projects, here’s a look at the steps that shaped my path.</p>
             </div>
-            <div class="timeline__items">
-                <article class="timeline__item">
-                    <div class="timeline__year">2023</div>
-                    <div class="timeline__content">
-                        <h3>Launched Sport Ninja</h3>
-                        <p>Started a YouTube channel to share gaming, dance, and music content, growing an engaged audience through consistent storytelling.</p>
+            <ol class="timeline">
+                <li class="timeline__item" data-year="2021">
+                    <div class="timeline__card">
+                        <h3>First web experiences</h3>
+                        <p>Built my first interactive websites using HTML and CSS, sharing them with friends and family to gather feedback and iterate quickly.</p>
                     </div>
-                </article>
-                <article class="timeline__item">
-                    <div class="timeline__year">2024</div>
-                    <div class="timeline__content">
-                        <h3>Joined FTC Robotics</h3>
-                        <p>Dove into robotics, focusing on programming, match strategy, and collaboration to build a competitive robot.</p>
+                </li>
+                <li class="timeline__item" data-year="2022">
+                    <div class="timeline__card">
+                        <h3>Expanding skills</h3>
+                        <p>Dove into Python and JavaScript to automate classroom tasks and prototype simple applications that helped teammates stay organized.</p>
                     </div>
-                </article>
-                <article class="timeline__item">
-                    <div class="timeline__year">2025</div>
-                    <div class="timeline__content">
-                        <h3>Recognized by Iowa Senate</h3>
-                        <p>Earned commendation for academic success and service, reinforcing my commitment to leading by example.</p>
+                </li>
+                <li class="timeline__item" data-year="2023">
+                    <div class="timeline__card">
+                        <h3>Leading collaborative projects</h3>
+                        <p>Coordinated a team project for a regional tech showcase, combining research, UX design, and presentation skills to earn finalist recognition.</p>
                     </div>
-                </article>
-            </div>
+                </li>
+                <li class="timeline__item" data-year="2024">
+                    <div class="timeline__card">
+                        <h3>Mentorship &amp; outreach</h3>
+                        <p>Started mentoring younger students in coding clubs, creating workshops that introduced accessible programming concepts to new learners.</p>
+                    </div>
+                </li>
+            </ol>
         </section>
 
-        <section class="callout">
-            <div class="callout__content">
-                <h2>Always learning. Always building.</h2>
-                <p>Whether it’s the next robotics competition or a business pitch, I’m ready for challenges that demand both technical skill and creativity. Let’s create something remarkable together.</p>
-                <a class="btn primary" href="mailto:adarsh@example.com">Connect with me</a>
-            </div>
+        <section class="collaboration" aria-labelledby="collaboration-title">
+            <h2 id="collaboration-title">Want to collaborate?</h2>
+            <p>If you have an opportunity where a curious, team-oriented builder can help, I’d love to connect. I’m especially excited about tech-for-good initiatives and storytelling projects.</p>
+            <a class="btn primary" href="https://www.linkedin.com/in/adarsh-rajesh-b0a605336/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
         </section>
     </main>
 
     <footer class="site-footer">
-        <small>&copy; <span id="year"></span> Adarsh Patel. All rights reserved.</small>
+        <p>Thanks for exploring my accomplishments—more stories and work samples are always in progress.</p>
     </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>

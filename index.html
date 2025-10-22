@@ -3,93 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adarsh's Portfolio</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Adarsh Rajesh · Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <!-- Loader -->
-    <div id="loader">
-        <div class="spinner"></div>
+    <div id="loader" role="status" aria-live="polite" aria-label="Loading content">
+        <div class="spinner" aria-hidden="true"></div>
     </div>
 
     <header class="site-header">
         <div class="brand">AR</div>
         <nav class="site-nav" aria-label="Primary">
-            <a href="index.html" class="home">Home</a>
+            <a href="index.html" aria-current="page" class="home">Home</a>
             <a href="my_hobbies.html" class="my_hobbies">Hobbies</a>
             <a href="achievements.html" class="achievements">Accomplishments</a>
             <a href="skill.html" class="questions">Q&amp;A</a>
         </nav>
     </header>
 
-    <main class="hero" role="main">
-        <section class="hero__content">
-            <p class="eyebrow">Welcome to my personal portfolio</p>
-            <h1>Hi, I'm Adarsh</h1>
-            <p class="lead">
-                I thrive on collaborating with teams to build thoughtful, people-first solutions. My curiosity lives at
-                the intersection of <strong>computer science</strong> and <strong>business strategy</strong>, where I love turning ideas into products that matter.
-            </p>
-            <div class="cta-group">
-                <a class="btn primary" href="achievements.html">View achievements</a>
-                <a class="btn secondary" href="my_hobbies.html">Discover hobbies</a>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <span class="hero__eyebrow">Welcome</span>
+                <h1 class="hero__title" id="hero-title">Hi, I’m Adarsh Rajesh</h1>
+                <p class="hero__lead">
+                    I’m a student developer who loves building thoughtful, people-first experiences. From classrooms to clubs,
+                    I enjoy turning ideas into collaborative projects that make a real impact.
+                </p>
+                <div class="cta-group">
+                    <a class="btn primary" href="achievements.html">Explore accomplishments</a>
+                    <a class="btn secondary" href="my_hobbies.html">Discover hobbies</a>
+                </div>
+                <div class="hero__meta" role="list">
+                    <span class="hero__meta-item" role="listitem">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v1h20v-1c0-3.33-6.67-5-10-5z"/></svg>
+                        Team-first leader
+                    </span>
+                    <span class="hero__meta-item" role="listitem">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+                        Based in Waukee, Iowa
+                    </span>
+                    <span class="hero__meta-item" role="listitem">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l9 6 9-6-9-5z"/><path d="M3 8.2v9.3L12 22l9-4.5V8.2l-9 6z"/></svg>
+                        CS &amp; business enthusiast
+                    </span>
+                </div>
             </div>
-            <ul class="socials" aria-label="Social media profiles">
-                <li><a href="https://twitter.com/AdarshRajesh7" target="_blank" rel="noreferrer"><span class="sr-only">Twitter</span><img src="images/x_logo_one.png" alt="Twitter" height="48" width="48"></a></li>
-                <li><a href="https://www.linkedin.com/in/adarsh-rajesh-b0a605336/" target="_blank" rel="noreferrer"><span class="sr-only">LinkedIn</span><img src="images/linkedin_logo.png" alt="LinkedIn" height="48" width="48"></a></li>
-                <li><a href="https://www.youtube.com/@sport_ninja" target="_blank" rel="noreferrer"><span class="sr-only">YouTube</span><img src="images/youtube_logo.png" alt="YouTube" height="48" width="48"></a></li>
-                <li><a href="https://github.com/sportninjia" target="_blank" rel="noreferrer"><span class="sr-only">GitHub</span><img src="images/GH.png" alt="GitHub" height="48" width="48"></a></li>
-            </ul>
-        </section>
-
-        <aside class="hero__media">
-            <div class="portrait-card">
-                <img src="images/ADARSH.JPG" alt="Adarsh smiling" class="portrait">
-                <ul class="tag-list" aria-label="Key strengths">
-                    <li>Team Player</li>
-                    <li>Problem Solver</li>
-                    <li>Lifelong Learner</li>
+            <div class="hero__media">
+                <div class="portrait-card">
+                    <img src="images/ADARSH.JPG" alt="Portrait of Adarsh smiling" class="portrait">
+                    <ul class="tag-list" aria-label="Key strengths">
+                        <li>Curious learner</li>
+                        <li>Collaborative builder</li>
+                        <li>Story-driven creator</li>
+                    </ul>
+                </div>
+                <ul class="socials" aria-label="Social media profiles">
+                    <li><a href="https://twitter.com/AdarshRajesh7" target="_blank" rel="noreferrer"><span class="sr-only">Twitter</span><img src="images/x_logo_one.png" alt="Twitter" width="24" height="24"></a></li>
+                    <li><a href="https://www.linkedin.com/in/adarsh-rajesh-b0a605336/" target="_blank" rel="noreferrer"><span class="sr-only">LinkedIn</span><img src="images/linkedin_logo.png" alt="LinkedIn" width="24" height="24"></a></li>
+                    <li><a href="https://www.youtube.com/@sport_ninja" target="_blank" rel="noreferrer"><span class="sr-only">YouTube</span><img src="images/youtube_logo.png" alt="YouTube" width="24" height="24"></a></li>
+                    <li><a href="https://github.com/sportninjia" target="_blank" rel="noreferrer"><span class="sr-only">GitHub</span><img src="images/GH.png" alt="GitHub" width="24" height="24"></a></li>
                 </ul>
             </div>
-        </aside>
+        </section>
+
+        <section class="section highlights" aria-labelledby="highlights-title">
+            <div class="section-header">
+                <h2 id="highlights-title">Explore more about me</h2>
+                <p>Jump into the areas that interest you most—from proud accomplishments to the hobbies that keep me energized.</p>
+            </div>
+            <div class="card-grid">
+                <a class="card info-card" href="achievements.html">
+                    <h3>Accomplishments</h3>
+                    <p>Review the awards, leadership roles, and milestones that shaped my journey so far.</p>
+                    <span class="card-link">See highlights →</span>
+                </a>
+                <a class="card info-card" href="my_hobbies.html">
+                    <h3>Hobbies</h3>
+                    <p>From cricket to content creation, explore the passions that fuel my creativity.</p>
+                    <span class="card-link">Discover more →</span>
+                </a>
+                <a class="card info-card" href="skill.html">
+                    <h3>Q&amp;A</h3>
+                    <p>Find quick answers about my skills, interests, and how we might collaborate.</p>
+                    <span class="card-link">Read the Q&amp;A →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="collab-title">
+            <div class="section-header">
+                <h2 id="collab-title">Let’s build together</h2>
+                <p>Whether you’re a teammate, mentor, or recruiter, I’m excited to collaborate on meaningful projects.</p>
+            </div>
+            <div class="hero__footer">
+                <strong>Currently seeking:</strong>
+                <span>Student-led innovation challenges</span>
+                <span>Internships &amp; mentorships</span>
+                <span>Creative tech collaborations</span>
+            </div>
+        </section>
     </main>
 
-    <section class="highlights" aria-labelledby="highlights-title">
-        <div class="section-header">
-            <h2 id="highlights-title">Explore more about me</h2>
-            <p>Jump straight into the areas that interest you most.</p>
-        </div>
-        <div class="card-grid">
-            <a class="info-card" href="achievements.html">
-                <h3>Accomplishments</h3>
-                <p>Discover projects, awards, and milestones that shaped my journey.</p>
-                <span class="card-link">See highlights →</span>
-            </a>
-            <a class="info-card" href="my_hobbies.html">
-                <h3>Hobbies</h3>
-                <p>From sports to storytelling, explore what energizes me outside of work.</p>
-                <span class="card-link">Take a look →</span>
-            </a>
-            <a class="info-card" href="skill.html">
-                <h3>Q&amp;A</h3>
-                <p>Get quick answers about my skills, interests, and ways we can collaborate.</p>
-                <span class="card-link">Read more →</span>
-            </a>
-        </div>
-    </section>
-
     <footer class="site-footer">
-        <p>Let’s build something great together. <a href="mailto:adarshrajesh318@gmail.com">Contact me</a>.</p>
+        <p>Let’s build something great together. Connect with me on any platform above.</p>
     </footer>
 
-    <!-- JavaScript -->
     <script>
-        window.addEventListener("load", function () {
-            const loader = document.getElementById("loader");
-            loader.style.display = "none";
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.style.display = 'none';
         });
     </script>
 </body>

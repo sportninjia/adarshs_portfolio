@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q&A</title>
-    <link rel="stylesheet" href="skill.css">
+    <title>Q&amp;A · Adarsh Rajesh</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/skill.css">
 </head>
 <body>
     <header class="site-header">
@@ -20,12 +21,12 @@
         </nav>
     </header>
 
-    <main class="page">
-        <section class="hero" aria-labelledby="qa-title">
+    <main class="page" aria-labelledby="qa-title">
+        <section class="hero">
             <div class="hero__content">
-                <p class="eyebrow">Ask me anything</p>
-                <h1 id="qa-title">Get quick answers about Adarsh</h1>
-                <p class="lead">From the projects I'm proud of to the hobbies I unwind with, this page curates the questions I hear most often. Use the search to jump straight to what you're curious about or browse the featured topics below.</p>
+                <span class="hero__eyebrow">Ask me anything</span>
+                <h1 class="hero__title" id="qa-title">Get answers about my journey</h1>
+                <p class="hero__lead">Curious about my skills, interests, or how I collaborate? This page curates the most popular questions so we can connect faster.</p>
                 <div class="hero__highlights" role="list">
                     <div class="highlight" role="listitem">
                         <span class="highlight__label">Experience</span>
@@ -41,9 +42,9 @@
                     </div>
                 </div>
             </div>
-            <div class="hero__card" aria-hidden="true">
+            <div class="hero__card">
                 <div class="hero__badge">Curious collaborator</div>
-                <p>Whether you're a classmate, mentor, or recruiter, this Q&amp;A is built to help us connect faster.</p>
+                <p>Whether you’re a classmate, mentor, or recruiter, this Q&amp;A is built to help us align quickly and find shared opportunities.</p>
             </div>
         </section>
 
@@ -51,7 +52,7 @@
             <form role="search" class="search-form" onsubmit="event.preventDefault();">
                 <label for="faq-search-input" class="sr-only">Search questions</label>
                 <div class="input-group">
-                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16a6.471 6.471 0 0 0 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.5 6.5 0 1 0 9.5 16a6.47 6.47 0 0 0 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5s4.5 1.01 4.5 4.5S11.99 14 9.5 14z"/></svg>
                     <input type="search" id="faq-search-input" placeholder="Search by question, topic, or keyword" autocomplete="off">
                     <button type="button" id="clear-search" aria-label="Clear search">&times;</button>
                 </div>
@@ -67,11 +68,11 @@
 
         <section class="faq" aria-label="Frequently asked questions">
             <div class="faq-grid">
-                <details class="faq-item" open data-tags="about,experience" data-question="Who is Adarsh?" data-answer="Adarsh is a student at Waukee NW located in Waukee, Iowa.">
+                <details class="faq-item" open data-tags="about,experience" data-question="Who is Adarsh?" data-answer="Adarsh is a student at Waukee Northwest High School in Waukee, Iowa.">
                     <summary>Who is Adarsh?</summary>
                     <p>Adarsh is a student at Waukee Northwest High School in Waukee, Iowa, where he pursues opportunities to lead, collaborate, and grow his technical skills.</p>
                 </details>
-                <details class="faq-item" data-tags="experience" data-question="What was his first programming language?" data-answer="The first programming language that Adarsh learned was HTML and CSS.">
+                <details class="faq-item" data-tags="experience" data-question="What was his first programming language?" data-answer="The first programming languages that Adarsh learned were HTML and CSS.">
                     <summary>What was the first programming language he learned?</summary>
                     <p>The first programming languages Adarsh learned were HTML and CSS, which sparked his passion for building polished, user-friendly experiences.</p>
                 </details>
@@ -112,7 +113,7 @@
     </main>
 
     <footer class="site-footer">
-        <p>Let’s build something great together.</p>
+        <p>Thanks for visiting—let’s keep the conversation going.</p>
     </footer>
 
     <script>
