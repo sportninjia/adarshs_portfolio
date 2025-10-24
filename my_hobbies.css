@@ -10,8 +10,8 @@
 .hero {
     padding: 2.6rem;
     border-radius: var(--radius-lg);
-    background: linear-gradient(155deg, rgba(25, 0, 8, 0.92), rgba(12, 0, 4, 0.65));
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--gradient-hero);
+    border: 1px solid var(--border);
     box-shadow: var(--glow);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -51,8 +51,8 @@
 .hero__tags span {
     padding: 0.4rem 1rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
     font-size: 0.9rem;
 }
 
@@ -65,8 +65,8 @@
 .feature-card {
     padding: 1.75rem;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
 }
 
@@ -89,8 +89,8 @@
 .hobby-card {
     padding: 1.8rem;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--gradient-panel);
+    border: 1px solid var(--border);
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
@@ -117,7 +117,7 @@
     position: relative;
     border-radius: var(--radius-md);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
 }
 
@@ -142,8 +142,8 @@
 .feature-panel {
     padding: 2.3rem;
     border-radius: var(--radius-lg);
-    background: linear-gradient(145deg, rgba(255, 70, 93, 0.18), rgba(26, 0, 9, 0.82));
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(145deg, rgba(255, 70, 93, 0.18), var(--surface-strong));
+    border: 1px solid var(--border);
     box-shadow: var(--glow);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -154,7 +154,7 @@
 .feature-panel__media {
     border-radius: var(--radius-md);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
 }
 

@@ -7,9 +7,9 @@
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
     gap: 3rem;
     border-radius: var(--radius-lg);
-    background: linear-gradient(145deg, rgba(26, 0, 9, 0.92), rgba(14, 0, 6, 0.72));
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 28px 55px -35px rgba(255, 70, 93, 0.85);
+    background: var(--gradient-hero);
+    border: 1px solid var(--border);
+    box-shadow: var(--glow);
     backdrop-filter: blur(18px);
 }
 
@@ -55,8 +55,8 @@
 .hero__meta-item {
     padding: 0.6rem 1rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
     color: var(--text-primary);
     font-size: 0.9rem;
     display: inline-flex;
@@ -80,8 +80,8 @@
     position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
     padding: 1.25rem;
 }
@@ -119,16 +119,16 @@
     border-radius: 12px;
     display: grid;
     place-items: center;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
     transition: transform var(--transition), border var(--transition), background var(--transition);
 }
 
 .socials a:hover,
 .socials a:focus-visible {
     transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.28);
+    background: var(--surface-glass);
+    border-color: var(--border-strong);
 }
 
 .highlights {
@@ -159,7 +159,7 @@
 
 .info-card:hover::after,
 .info-card:focus-visible::after {
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: var(--border-strong);
 }
 
 .hero__footer {
@@ -177,7 +177,7 @@
 #loader {
     position: fixed;
     inset: 0;
-    background-color: rgba(10, 0, 4, 0.95);
+    background-color: var(--surface-overlay);
     display: flex;
     justify-content: center;
     align-items: center;

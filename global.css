@@ -12,11 +12,20 @@
     --surface: rgba(17, 0, 6, 0.75);
     --surface-strong: rgba(26, 0, 9, 0.85);
     --surface-soft: rgba(255, 255, 255, 0.08);
+    --surface-glass: rgba(255, 255, 255, 0.1);
+    --surface-glass-strong: rgba(255, 255, 255, 0.12);
+    --surface-glass-bold: rgba(255, 255, 255, 0.18);
+    --surface-overlay: rgba(10, 0, 4, 0.95);
     --border: rgba(255, 255, 255, 0.16);
     --border-strong: rgba(255, 255, 255, 0.28);
+    --focus-ring: 0 0 0 3px rgba(255, 70, 93, 0.35);
     --glow: 0 25px 45px -30px rgba(255, 70, 93, 0.85);
     --glow-soft: 0 20px 45px -35px rgba(255, 70, 93, 0.55);
     --shadow-card: 0 22px 42px -28px rgba(7, 0, 2, 0.75);
+    --gradient-hero: linear-gradient(145deg, rgba(26, 0, 9, 0.92), rgba(14, 0, 6, 0.72));
+    --gradient-hero-alt: linear-gradient(150deg, rgba(28, 0, 9, 0.92), rgba(10, 0, 4, 0.66));
+    --gradient-panel: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    --gradient-panel-strong: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
     --radius-lg: 26px;
     --radius-md: 18px;
     --radius-sm: 12px;
@@ -45,6 +54,13 @@ body {
     font-family: var(--font-family, 'Inter', Arial, sans-serif);
 }
 
+button,
+input,
+summary {
+    font: inherit;
+    color: inherit;
+}
+
 main {
     width: 100%;
 }
@@ -56,6 +72,11 @@ a {
 a:hover,
 a:focus-visible {
     color: var(--brand-200);
+}
+
+:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
 }
 
 img {
@@ -197,8 +218,8 @@ img {
 .card {
     padding: 1.8rem;
     border-radius: var(--radius-md);
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--gradient-panel);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
     transition: transform var(--transition), border var(--transition), box-shadow var(--transition);
 }
@@ -206,7 +227,7 @@ img {
 .card:hover,
 .card:focus-within {
     transform: translateY(-6px);
-    border-color: rgba(255, 255, 255, 0.22);
+    border-color: var(--border-strong);
     box-shadow: 0 26px 50px -32px rgba(255, 70, 93, 0.85);
 }
 

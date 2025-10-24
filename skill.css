@@ -10,8 +10,8 @@
 .hero {
     padding: 2.6rem;
     border-radius: var(--radius-lg);
-    background: linear-gradient(150deg, rgba(28, 0, 9, 0.92), rgba(10, 0, 4, 0.66));
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--gradient-hero-alt);
+    border: 1px solid var(--border);
     box-shadow: var(--glow);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -51,8 +51,8 @@
 .highlight {
     padding: 1.25rem;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
 }
 
 .highlight__label {
@@ -71,8 +71,8 @@
 .hero__card {
     padding: 1.8rem;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
 }
 
@@ -82,8 +82,8 @@
     gap: 0.4rem;
     padding: 0.45rem 0.9rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
     font-size: 0.85rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -99,7 +99,7 @@
     padding: 2.4rem;
     border-radius: var(--radius-lg);
     background: var(--surface);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
 }
 
@@ -112,8 +112,8 @@
     display: flex;
     align-items: center;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border);
+    background: var(--surface-soft);
     padding: 0.35rem 1rem;
     gap: 0.75rem;
 }
@@ -121,7 +121,7 @@
 .input-group svg {
     width: 20px;
     height: 20px;
-    fill: rgba(255, 255, 255, 0.55);
+    fill: rgba(255, 246, 247, 0.55);
 }
 
 .input-group input {
@@ -139,7 +139,7 @@
 
 #clear-search {
     border: none;
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--surface-glass);
     color: var(--text-primary);
     border-radius: 999px;
     width: 32px;
@@ -154,7 +154,7 @@
 
 #clear-search:hover,
 #clear-search:focus-visible {
-    background: rgba(255, 255, 255, 0.22);
+    background: var(--surface-glass-bold);
     transform: translateY(-2px);
 }
 
@@ -165,8 +165,8 @@
 }
 
 .filter-buttons button {
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
+    background: var(--surface-soft);
     color: var(--text-primary);
     padding: 0.55rem 1.1rem;
     border-radius: 999px;
@@ -186,8 +186,8 @@
 .faq {
     padding: 2.6rem;
     border-radius: var(--radius-lg);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--surface);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
 }
 
@@ -200,8 +200,8 @@
 .faq-item {
     padding: 1.4rem 1.6rem;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
     transition: border var(--transition), transform var(--transition);
 }
 
@@ -218,7 +218,7 @@
 }
 
 .faq-item[open] {
-    border-color: rgba(255, 255, 255, 0.22);
+    border-color: var(--border-strong);
     transform: translateY(-4px);
 }
 
@@ -226,16 +226,16 @@
     margin: 2rem 0 0;
     padding: 1.1rem 1.4rem;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px dashed rgba(255, 255, 255, 0.18);
+    background: var(--surface-glass);
+    border: 1px dashed var(--border);
     color: var(--text-muted);
 }
 
 .contact-cta {
     padding: 2.4rem;
     border-radius: var(--radius-lg);
-    background: linear-gradient(145deg, rgba(255, 70, 93, 0.18), rgba(27, 0, 9, 0.82));
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(145deg, rgba(255, 70, 93, 0.18), var(--surface-strong));
+    border: 1px solid var(--border);
     box-shadow: var(--glow);
     display: flex;
     flex-direction: column;
