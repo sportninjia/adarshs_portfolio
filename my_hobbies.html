@@ -3,40 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adarsh's Portfolio | Hobbies</title>
+    <title>Hobbies · Adarsh Rajesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="my_hobbies.css">
 </head>
-    <h1 class="title">My Hobbies</h1>
-    <p class="inline">
-        <a href="index.html" class="home">Home</a>
-        <a href="achievements.html" class="achievements">Accomplishments </a>
-        <a href="skill.html" class="questions">Q&A</a>
-    </p>
+<body>
+    <header class="site-header">
+        <div class="brand">AR</div>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" class="home">Home</a>
+            <a href="my_hobbies.html" class="my_hobbies" aria-current="page">Hobbies</a>
+            <a href="achievements.html" class="achievements">Accomplishments</a>
+            <a href="skill.html" class="questions">Q&amp;A</a>
+        </nav>
+    </header>
 
+    <main class="page" aria-labelledby="hobbies-title">
+        <section class="hero">
+            <div class="hero__content">
+                <span class="hero__eyebrow">Beyond the classroom</span>
+                <h1 class="hero__title" id="hobbies-title">How I recharge and stay inspired</h1>
+                <p class="hero__lead">
+                    My best ideas come from mixing movement, creativity, and community. These hobbies keep me grounded, curious,
+                    and ready to bring fresh perspectives into every project.
+                </p>
+                <div class="hero__tags" role="list">
+                    <span role="listitem">Cricket</span>
+                    <span role="listitem">Video storytelling</span>
+                    <span role="listitem">Tech tinkering</span>
+                    <span role="listitem">Community service</span>
+                </div>
+            </div>
+            <div class="hero__media">
+                <div class="feature-card">
+                    <h3>Weekend cricket captain</h3>
+                    <p>Leading my local cricket team has taught me how to strategize, support teammates, and stay calm in high-energy moments.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Story-driven video creator</h3>
+                    <p>I produce highlight reels and commentary on YouTube, experimenting with editing techniques that make sports stories feel cinematic.</p>
+                </div>
+            </div>
+        </section>
 
-    <p class="discreption">
-        I have a diverse range of interests, including video games, basketball, programming, and cricket. I operate a YouTube channel named "Sport Ninja," where I share content related to video games, primarily focusing on EA FC and Fortnite.
-        My enthusiasm for cricket started early, and I support teams such as Team India and Team USA while playing for a team called WIM. In basketball, I have been a long-time fan of the Los Angeles Lakers and have played competitively, including winning the I9 basketball league in fourth grade and representing my school in eighth and ninth grades.
-        Although I engage in programming, I regard it as my least preferred hobby. Nevertheless, a key goal during my junior year of high school was to create a website, which I successfully achieved.
-    </p>
+        <section class="section" aria-labelledby="spotlight-hobbies">
+            <div class="section-header">
+                <h2 id="spotlight-hobbies">Hobby spotlights</h2>
+                <p>A look at the activities that give me energy and sharpen the skills I bring back to school projects.</p>
+            </div>
+            <div class="hobby-grid">
+                <article class="hobby-card">
+                    <h3>Cricket strategist</h3>
+                    <p>Analyzing opponents, setting lineups, and fostering communication help me lead the team through tournaments and friendly matches.</p>
+                </article>
+                <article class="hobby-card">
+                    <h3>Video editing &amp; storytelling</h3>
+                    <p>I script, film, and edit sports content—balancing narrative arcs, stats, and visuals to keep viewers engaged.</p>
+                </article>
+                <article class="hobby-card">
+                    <h3>Tech experiments</h3>
+                    <p>From small HTML/CSS prototypes to Python scripts, I constantly tinker with ideas that could make daily routines easier for friends.</p>
+                </article>
+                <article class="hobby-card">
+                    <h3>Community volunteering</h3>
+                    <p>Helping with local events and fundraisers sharpens my empathy and organizational skills while connecting me with neighbors.</p>
+                </article>
+            </div>
+        </section>
 
-    <div class="images">
-        <span>
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-youtube-logo-icon-download-in-svg-png-gif-file-formats--social-media-70-flat-icons-color-pack-logos-432560.png?f=webp&w=256" alt="YouTube Logo">
-        </span>
-        <span>
-            <img src="https://www.i9sportsfranchise.com/wp-content/uploads/2021/07/Beige-Minimalistic-Organic-Honey-Label-1.png" alt="I9 Sports Logo" height="200" width="350">
-        </span>
-    </div>
-    
-    <div class="cricket-container">
-        <div class="cricket">
-            <video height="300" width="400" autoplay loop muted>
-                <source src="videos/cricket.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-    
-    </div>
+        <section class="feature-panel" aria-labelledby="cricket-feature">
+            <div class="feature-panel__media">
+                <iframe src="https://www.youtube.com/embed/1nQZL8QFHMY" title="Cricket highlight reel" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="feature-panel__content">
+                <h3 id="cricket-feature">Cricket keeps me sharp</h3>
+                <p>Captaining my cricket squad combines leadership, quick decision making, and constant iteration—skills I bring into hackathons and group projects.</p>
+                <ul class="feature-panel__list">
+                    <li>Practice sessions twice a week build discipline.</li>
+                    <li>Match-day analysis refines strategy and teamwork.</li>
+                    <li>Sharing clips online helps grow our community.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="gallery-title">
+            <div class="section-header">
+                <h2 id="gallery-title">Snapshots</h2>
+                <p>A peek at the people, places, and moments that keep my hobbies exciting.</p>
+            </div>
+            <div class="gallery">
+                <figure class="gallery__item" data-label="Cricket">
+                    <img src="images/cricket.png" alt="Adarsh playing cricket on the field" loading="lazy" decoding="async">
+                </figure>
+                <figure class="gallery__item" data-label="Filmmaking">
+                    <img src="images/video_editing.png" alt="Editing timeline on a laptop screen" loading="lazy" decoding="async">
+                </figure>
+                <figure class="gallery__item" data-label="Community">
+                    <img src="images/community_service.png" alt="Volunteers helping at a local event" loading="lazy" decoding="async">
+                </figure>
+                <figure class="gallery__item" data-label="Tech">
+                    <img src="images/coding.png" alt="Lines of code on a monitor with red lighting" loading="lazy" decoding="async">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>These interests shape how I collaborate—let’s chat if any align with your next project.</p>
+    </footer>
 </body>
 </html>

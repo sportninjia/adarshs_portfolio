@@ -1,83 +1,182 @@
-/* Background and Text Color */
-body {
-    background-color: #333333;
-    color: white;
+.page {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 2.75rem auto 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-    overflow-x: hidden;
+    gap: 3.25rem;
 }
 
-/* Title Styling */
-.title {
-    text-align: center;
-    color: white;
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    background: var(--gradient-hero);
+    border: 1px solid var(--border);
+    box-shadow: var(--glow);
 }
 
-/* Centered Navigation Links */
-.center_text {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.my_hobbies, .home, .questions {
-    text-decoration: none;
-    color: white;
-    position: relative;
-    margin: 0 10px;
-}
-
-/* Underline Animation for Links */
-.my_hobbies::after,
-.home::after,
-.questions::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background-color: red;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease-in-out;
-}
-
-.my_hobbies:hover::after,
-.home:hover::after,
-.questions:hover::after {
-    transform: scaleX(1);
-}
-
-.basketball {
-    width: 200px;
-    height: 200px; /* Equal to width to make a square */
-    background-color: #3498db; /* Example color */
-    border-radius: 20px; /* Smooth edges */
-    display: flex; /* Allows centering of content */
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    margin: 20px auto; /* Center horizontally */
-}
-
-.dance{
-    text-align: center;
-}
-
-.video{
+.hero__content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
-.paragraph{
-    text-align: center;
+.hero__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.75rem;
+    color: var(--brand-200);
+}
+
+.hero__title {
+    margin: 0;
+    font-size: clamp(2.3rem, 3.5vw, 3.2rem);
+    line-height: 1.18;
+}
+
+.hero__description {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.hero__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.stat-card {
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-card);
+}
+
+.stat-card strong {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.35rem;
+}
+
+.stat-card span {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.85rem;
+}
+
+.highlight-card {
+    padding: 1.75rem;
+    border-radius: var(--radius-md);
+    background: var(--gradient-panel);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.highlight-card h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.highlight-card p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.milestones {
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-card);
+}
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.75rem;
+}
+
+.timeline__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.timeline__item::before {
+    content: attr(data-year);
+    font-weight: 600;
+    color: var(--brand-200);
+    letter-spacing: 0.12em;
+    padding-top: 0.35rem;
+}
+
+.timeline__card {
+    padding: 1.6rem;
+    border-radius: var(--radius-md);
+    background: var(--surface-glass);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-card);
+}
+
+.timeline__card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.timeline__card p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+.collaboration {
+    padding: 2.4rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(145deg, rgba(255, 70, 93, 0.18), var(--surface-strong));
+    border: 1px solid var(--border);
+    box-shadow: var(--glow);
+}
+
+.collaboration h2 {
+    margin: 0 0 0.75rem;
+}
+
+.collaboration p {
+    margin: 0 0 1.5rem;
+    color: var(--text-muted);
+    max-width: 560px;
+}
+
+@media (max-width: 640px) {
+    .hero,
+    .milestones,
+    .collaboration {
+        padding: 2rem;
+    }
+
+    .timeline__item {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+
+    .timeline__item::before {
+        padding-top: 0;
+    }
 }
